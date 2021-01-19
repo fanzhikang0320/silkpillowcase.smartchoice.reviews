@@ -1,0 +1,48 @@
+$rootWidth: 1200px !default;
+
+$baseColor: #0F4472 !default;
+
+$btnColor: #0F4472 !default;
+
+$btnHoverColor: #0F4472 !default;
+
+$titleColor: #353535 !default;
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+@mixin bg($url) {
+    background-image: url($url);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin aToBtn($width,$height,$radius,$size:16px,$color:#ffffff,$weight: bold) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: $width;
+    height: $height;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    background-color: $btnColor;
+    border-radius: $radius;
+    text-decoration: none;
+    transition: all linear 0.1s;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,.4);
+    &:hover {
+        background-color: $btnHoverColor;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        
+    }
+}

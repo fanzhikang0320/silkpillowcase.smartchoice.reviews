@@ -1,0 +1,127 @@
+{
+    "websiteName": "Silk Pillowcase",
+    "baseScore": ["9.8","9.5","9.2","9.0","8.8","8.5"],
+    "data": [
+        {
+            "name": "Blissy",
+            "picture": "/data/img/blissy.png",
+            "link": "https://www.emrldisle.com/88MJP83/3W3HD9N/?uid=2393&creative_id=11703",
+            "reviewLink": "",
+            "buys": 586,
+            "strengthList": [
+                {
+                    "text": "100% Pure Mulberry, 22-Momme Silk"
+                },
+                {
+                    "text": "Certificated by OEKO-TEX standard 100"
+                },
+                {
+                    "text": "Anti Aging - 43% less friction than cotton"
+                },
+                {
+                    "text": "Anti Sleep Crease - more delicate on skin by 47%"
+                },
+                {
+                    "text": "Anti Bed Head - stops split ends and hair damage"
+                },
+                {
+                    "text": "Anti Dust Mites - eliminate allergies caused by dust mites"
+                },
+                {
+                    "text": "More gentle on your hair than cotton"
+                },
+                {
+                    "text": "Natural body temperature regulator"
+                },
+                {
+                    "text": "Highest Grade 6A 22-Momme Silk"
+                },
+                {
+                    "text": "Better Hair, Glowing Skin, Enhanced Sleep & Reduced Wrinkles"
+                }
+            ],
+            "weaknessList": []
+        },
+        {
+            "name": "Fishers Finery",
+            "picture": "/data/img/fishers-finery.png",
+            "link": "https://amzn.to/2JbCMYt",
+            "reviewLink": "",
+            "buys": 586,
+            "strengthList": [
+                {
+                    "text": "100% Natural mulberry silk, 19 momme"
+                },
+                {
+                    "text": "More gentle on your hair than cotton"
+                },
+                {
+                    "text": "Help you feel cool in summer and warm in winter"
+                },
+                {
+                    "text": "Hypoallergenic, breathable, soft, and comfortable"
+                },
+                {
+                    "text": "Natural anti-aging"
+                },
+                {
+                    "text": "Silky texture of silk makes you feel relaxed"
+                },
+                {
+                    "text": "Well-designed & luxurious gift box"
+                }
+            ],
+            "weaknessList": []
+        },
+        {
+            "name": "OLESILK",
+            "picture": "/data/img/OLESILK.png",
+            "link": "https://amzn.to/37FtnSf",
+            "reviewLink": "",
+            "buys": 586,
+            "strengthList": [
+                {
+                    "text": "100% Mulberry Silk，22 Momme"
+                },
+                {
+                    "text": "Completely natural and hypoallergenic silk"
+                },
+                {
+                    "text": "Keeps your skin hydrated"
+                },
+                {
+                    "text": "Reduces the appearance of fine lines and wrinkles"
+                },
+                {
+                    "text": "Well-designed & luxurious gift box"
+                }
+            ],
+            "weaknessList": []
+        },
+        {"name": "Tafts",
+            "picture": "/data/img/tafts.png",
+            "link": "https://amzn.to/2LYcvOm",
+            "reviewLink": "",
+            "buys": 586,
+            "strengthList": [
+                {
+                    "text": "100% Mulberry Silk，22 Momme"
+                },
+                {
+                    "text": "Gives you softer skin and smoother hair"
+                },
+                {
+                    "text": "Natural fiber that repels dust mites"
+                },
+                {
+                    "text": "Hypoallergenic quality helps to eliminate allergies and asthma"
+                },
+                {
+                    "text": "Reduces the appearance of fine lines and wrinkles"
+                }
+            ],
+            "weaknessList": []
+        }
+    ]
+}
+

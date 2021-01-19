@@ -1,0 +1,425 @@
+
+.container {
+    .banner-area {
+        @include bg('../assets/image/banner.jpg');
+        height: 200px;
+
+        .banner-container {
+            display: flex;
+            align-items: center;
+            width: $rootWidth;
+            height: 100%;
+            margin: 0 auto;
+
+            .banner-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 430px;
+                height: 120px;
+                font-size: 50px;
+                
+                .g {
+                    color: $baseColor;
+                }
+                .a {
+                    color: #101010;
+                }
+            }
+
+            .seal {
+                display: inline-block;
+                width: 132px;
+                height: 132px;
+            }
+        }
+    }
+    .main-container {
+        width: $rootWidth;
+        margin: 0 auto;
+
+        .area-title {
+            font-size: 28px;
+            margin: 25px 0px 10px 0px;
+            color: #353535;
+        }
+
+        .area-content {
+            color: #353535;
+            line-height: 25px;
+            font-family: 'Montserrat-Light';
+            p {
+                margin: 8px 0px;
+            }
+        }
+
+        .product-area {
+            .desc {
+                font-size: 20px;
+                margin: 20px 0px;
+            }
+            .product-list-container {
+                width: $rootWidth;
+                margin: auto;
+                .product-item {
+                    position: relative;
+                    box-shadow: 0px 2px 6px 0px rgba(0,0,0,.4);
+                    margin-bottom: 20px;
+                    &:hover {
+                        cursor: pointer;
+                        .corner-box {
+                            &::after {
+                                border-right-color: #EAF2FF;
+                            }
+                        }
+                        .product-link-box {
+                            .product-container {
+                                .product-container-left {
+                                    background-color: #EAF2FF;
+                                }
+                                .product-container-right {
+                                    background-color: #ffffff;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .circle {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                        width: 47px;
+                        height: 94px;
+                        border-top-right-radius: 94px;
+                        border-bottom-right-radius: 94px;
+                        background-color: rgb(255,154,2);
+                        text-align: center;
+                        .num {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-68%,-50%);
+                            font-size: 42px;
+                            font-weight: bolder;
+                            color: #ffffff;
+                        }
+                    }
+                    .corner-box {
+                        position: absolute;
+                        z-index: 1;
+                        top: 5px;
+                        left: 0px;
+                        width: 265px;
+                        height: 56px;
+                        background-color: #CB181D;
+                        color: #ffffff;
+                        line-height: 56px;
+                        font-size: 24px;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            right: -1px;
+                            border-left: 16px solid transparent;
+                            border-right: 16px solid #ffffff;
+                            border-top: 28px solid transparent;
+                            border-bottom: 28px solid transparent;
+                        }
+                        .text {
+                            margin-left: 37px;
+                        }
+                    }
+                    .big-title {
+                        height: 65px;
+                        font-size: 34px;
+                        color: #ffffff;
+                        font-family: 'Montserrat';
+                        font-weight: bold;
+                        text-align: center;
+                        line-height: 65px;
+                        background-color: $baseColor;
+                    }
+                    .product-link-box {
+                        min-height: 250px;
+                        width: 100%;
+                        color: #353535;
+                        transition: all linear 0.15s;
+                        .product-container {
+                            position: relative;
+                            width: 100%;
+                            .product-container-left {
+                                display: flex;
+                                height: 100%;
+                                transition: all linear 0.1s;
+                                // width: ~ 'calc(100% - 260px)';
+                                .picture-box {
+                                    width: 400px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 27px;
+                                    .picture {
+                                        display: inline-block;
+                                        width: 250px;
+                                        height: 200px;
+                                    }
+                                }
+                                .desc-list-box {
+                                    color: #353535;
+                                    padding: 40px 0px;
+                                    .product-name {
+                                        font-size: 28px;
+                                        font-family: 'Montserrat';
+                                        font-weight: bold;
+                                    }
+                                    .list-box {
+                                        li {
+                                            margin: 11px 0px ;
+                                            .icon {
+                                                @include bg('../assets/image/list-icon.svg');
+                                                display: inline-block;
+                                                width: 20px;
+                                                height: 20px;
+                                                vertical-align: middle;
+                                                margin-right: 12px;
+                                            }
+                                            .text {
+                                                font-size: 15px;
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                            }
+                                            
+                                        }
+                                        &.weakness-list {
+                                            li {
+                                                .icon {
+                                                    @include bg('../assets/image/warning.svg');
+                                                }
+                                                .text {
+                                                    color: #F14C37;
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                    .buys {
+                                        width: 285px;
+                                        height: 46px;
+                                        line-height: 46px;
+                                        text-align: center;
+                                        margin-top: 21px;
+                                        font-size: 20px;
+                                        color: #FC4621;
+                                        border: 1px dashed #2F8FF3;
+                                        font-weight: bold;
+                                    }
+                                }
+        
+                            }
+                            .product-container-right {
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                height: 100%;
+                                width: 260px;
+                                background-color: #F7F7F7;
+                                transition: all linear 0.1s;
+                                .good {
+                                    font-size: 24px;
+                                    font-weight: bold;
+                                    color: #FF8300;
+                                    .king-icon {
+                                        @include bg('../assets/image/king.svg');
+                                        display: inline-block;
+                                        width: 50px;
+                                        height: 50px;
+                                        margin-left: 9px;
+                                    }
+                                    .good-icon {
+                                        @include bg('../assets/image/praise.svg');
+                                        display: inline-block;
+                                        width: 50px;
+                                        height: 50px;
+                                        margin-left: 9px;
+                                    }
+                                }
+                                .rate-box {
+                                    color: #A6A2A2;
+                                    font-size: 30px;
+                                    margin: 12px 0px;
+                                    .score {
+                                        font-size: 60px;
+                                        color: #353535;
+                                    }
+        
+                                }
+                                .btn {
+                                    @include aToBtn(200px,54px,5px,24px);
+                                    margin-bottom: 8px;
+
+                                    .icon {
+                                        @include bg('../assets/image/right.svg');
+                                        display: inline-block;
+                                        width: 30px;
+                                        height: 30px;
+                                        margin-left: 2px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+        
+                    &.first-item,&.last-item {
+                        
+                        .product-link-box {
+                            .product-container {
+                                .product-container-left {
+                                    .desc-list-box {
+                                        .product-name {
+                                            font-size: 40px;
+                                            color: #353535;
+                                        }
+        
+                                        .list-box {
+                                            li {
+                                                font-family: 'Montserrat';
+                                            }
+                                        }
+                                    }
+                                }
+                                .product-container-right {
+                                    .good {
+                                        .text {
+                                            font-size: 30px;
+                                        }
+                                    }
+                                    .rate-box {
+                                        margin: 33px 0px 18px 0px;
+                                        .score {
+                                            font-size: 80px;
+                                        }
+                                    }
+                                    .btn {
+                                        background-color: #FC4621;
+
+                                        &:hover {
+                                            background-color: #FF8300;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.first-item {
+                        .product-link-box {
+                            .product-container {
+                                .product-container-left {
+                                    .picture-box {
+                                        display: block;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .picture {
+                                            width: 300px;
+                                            height: 240px;
+                                            margin-left: 35px;
+                                        }
+                                    }
+                                    .desc-list-box {
+                                        .list-box {
+                                            li {
+                                                .text {
+                                                    font-weight: bold;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .circle {
+                            width: 58px;
+                            height: 116px;
+                            border-top-right-radius: 116px;
+                            border-bottom-right-radius: 116px;
+                            background-color: #2F8FF3;
+                            
+                        }
+                    }
+                    &.last-item {
+                        .product-link-box {
+                            .product-container {
+                                .product-container-left {
+                                    .desc-list-box {
+                                        .list-box {
+                                            li {
+                                                .text {
+                                                    font-weight: bold;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .why-choose-area {
+            margin-top: 60px;
+            .area-title {
+                margin-bottom: 30px;
+            }
+        }
+        .why-area {
+            margin-top: 60px;
+            .area-title {
+                margin-bottom: 30px;
+            }
+            .content-item {
+
+                .title {
+                    font-size: 20px;
+                    color: #353535;
+                }
+            }
+        }
+        .special-offer-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 47px;
+            margin-bottom: 60px;
+
+            .offer {
+                font-size: 40px;
+            }
+            .sub {
+                font-size: 28px;
+                margin-top: 10px;
+            }
+            .posters-box {
+                margin-top: 35px;
+                position: relative;
+                .btn {
+                    @include aToBtn(473px,78px,35px,20px,#dc0a13);
+                    position: absolute;
+                    left: 70px;
+                    bottom: 97px;
+                    background-color: #fdf3f1;
+                    &:hover {
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+

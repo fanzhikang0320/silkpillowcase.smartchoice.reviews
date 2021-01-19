@@ -1,0 +1,14 @@
+.about-wrapper {
+    width: $rootWidth;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    .title {
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+    p {
+        font-family: 'Montserrat-Light';
+        line-height: 25px;
+    }
+}

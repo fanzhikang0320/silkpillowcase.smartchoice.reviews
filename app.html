@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    <script type="text/javascript">(function(win){var tid;function refreshRem(){let designSize=1920;let html=document.documentElement;let wW=html.clientWidth;let rem=100;if(wW>750&&wW<1024){rem=65;}else if(wW>=1024&&wW<1100){rem=70;}else if(wW>=1100&&wW<1280){rem=80;}else if(wW>=1280&&wW<1366){rem=85;}else if(wW>=1366&&wW<1400){rem=90;}else if(wW>=1400&&wW<1680){rem=90;}else if(wW>=1680&&wW<1920){rem=100;}else if(wW>=1920){rem=100;};document.documentElement.style.fontSize=rem+'px';}win.addEventListener('resize',function(){clearTimeout(tid);tid=setTimeout(refreshRem,300);},false);win.addEventListener('pageshow',function(e){if(e.persisted){clearTimeout(tid);tid=setTimeout(refreshRem,300);}},false);refreshRem();})(window)</script>
+
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+</html>

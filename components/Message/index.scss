@@ -1,0 +1,147 @@
+.maskLayer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(35, 35, 35, .6);
+    z-index: 99;
+    display: none;
+    
+    .mask-content {
+        text-decoration: none;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 590px;
+        height: 320px;
+        box-sizing: border-box;
+        background-color: #5893FD;
+        padding: 5px;
+
+        opacity: 0;
+        .close {
+            position: absolute;
+            right: -30px;
+            top: -30px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            background-image: url('../../assets/image/cha.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .mask-box {
+            display: block;
+            .mask-left {
+                float: left;
+            }
+            .mask-right {
+                float: left;
+                display: flex;
+                width: 310px;
+                box-sizing: border-box;
+                flex-direction: column;
+                align-items: center;
+                .offer {
+                    font-size: 28px;
+                    color: #ffffff;
+                }
+                .OEI {
+                    font-size: 18px;
+                    color: #101010;
+                }
+                .save {
+                    span {
+                        font-size: 20px;
+                        color: #101010;
+                        margin-right: 5px;
+                    }
+                    strong {
+                        font-size: 34px;
+                        color: #ffffff;
+                        letter-spacing: -1.9px;
+                    }
+                }
+                .date-area {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    .time-box {
+                        width: 90px;
+                        height: 90px;
+                        margin: 0 3px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+                        .text {
+                            font-size: 14px;
+                            color: #ffffff;
+                            font-weight: bold;
+                        }
+                        .time {
+                            margin-top: 7px;
+                           display: flex;
+                           width: 100%;
+
+                           justify-content: space-around;
+                            span {
+                                display: inline-block;
+                                width: 40px;
+                                height: 60px;
+                                text-align: center;
+                                line-height: 60px;
+                                font-size: 50px;
+                                font-weight: bold;
+                                color: #535353;
+                                // margin: 0 3px;
+                                border-radius: 5px;
+                                background-color: #ffffff;
+                            }
+                        }
+                        &.colon {
+                            &::after{
+                                position: absolute;
+                                content: ':';
+                                right: -15px;
+                                bottom: 0px;
+                                color: #ffffff;
+                                font-size: 50px;
+                            }
+                        }
+                    }
+                }
+                .desc {
+                    font-size: 18px;
+                    margin: 10px 0px;
+                }
+                .btn {
+                    text-decoration: none;
+                    display: block;
+                    width: 295px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    letter-spacing: -0.9px;
+                    background-color: #FF7B39;
+                    box-shadow: 0px 0px 8px 5px #B3D1Ff;
+                    transition: all linear 0.15s;
+                    &:hover {
+                        box-shadow: none;
+                        background-color: rgb(255, 171,82);
+
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}

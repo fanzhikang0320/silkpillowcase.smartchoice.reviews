@@ -1,0 +1,16 @@
+.disclosure-wrapper {
+    width: $rootWidth;
+    margin: auto;
+    padding: 20px 0px 60px 0px;
+    .title {
+      font-size: 20px;
+      margin: 20px 0px;
+    }
+    .content {
+      line-height: 25px;
+      font-family: 'Montserrat-Light';
+      p {
+        margin: 10px 0px;
+      }
+    }
+  }
